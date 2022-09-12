@@ -66,10 +66,18 @@ function AnotherForm() {
                     verifyEmail();
                     setUserName();
                 })
-            // .catch(error => {
-            //     setError(error.message);
-            //     console.error(error);
-            // })
+                // .catch(error => {
+                //     setError(error.message);
+                //     console.error(error);
+                // })
+                // .catch(error => {
+                //     setError(error.message);
+                //     console.error(error);
+                // })
+                .catch(error => {
+                    setError(error.message);
+                    console.error(error);
+                })
         }
         event.preventDefault();
     }
