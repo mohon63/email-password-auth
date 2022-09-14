@@ -47,6 +47,7 @@ function AnotherForm() {
 
         if (registered) {
             signInWithEmailAndPassword(auth, email, password)
+            console.log(auth, email, password)
                 .then(result => {
                     const user = result.user;
                     console.log(user);
@@ -65,15 +66,8 @@ function AnotherForm() {
                     setPassword('');
                     verifyEmail();
                     setUserName();
+                    // setUserName();
                 })
-                // .catch(error => {
-                //     setError(error.message);
-                //     console.error(error);
-                // })
-                // .catch(error => {
-                //     setError(error.message);
-                //     console.error(error);
-                // })
                 .catch(error => {
                     setError(error.message);
                     console.error(error);
