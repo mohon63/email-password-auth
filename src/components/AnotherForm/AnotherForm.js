@@ -67,6 +67,7 @@ function AnotherForm() {
                     verifyEmail();
                     setUserName();
                     // setUserName();
+                    // setUserName();
                 })
                 .catch(error => {
                     setError(error.message);
